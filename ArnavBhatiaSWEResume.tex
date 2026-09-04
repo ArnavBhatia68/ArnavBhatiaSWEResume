@@ -1,0 +1,177 @@
+%-------------------------
+% Resume in LaTeX
+% Adapted from Jake's Resume
+%-------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Page layout
+\addtolength{\oddsidemargin}{-0.58in}
+\addtolength{\evensidemargin}{-0.58in}
+\addtolength{\textwidth}{1.16in}
+\addtolength{\topmargin}{-0.66in}
+\addtolength{\textheight}{1.31in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parindent}{0pt}
+
+% Section formatting
+\titleformat{\section}
+  {\vspace{-4pt}\scshape\raggedright\large}
+  {}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Machine-readable / ATS-parsable text
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-1pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in,label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.20in,itemsep=0pt,topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+%-------------------------------------------
+% Resume starts here
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  \textbf{\Huge \scshape Arnav Bhatia} \\ \vspace{1pt}
+  \href{https://arnavbhatia-portfolio.vercel.app/}{\underline{arnavbhatia-portfolio.vercel.app}} \\
+  \small San Francisco Bay Area, CA $|$ 480-764-7520 $|$
+  \href{mailto:abhati35@asu.edu}{\underline{abhati35@asu.edu}} $|$
+  \href{https://www.linkedin.com/in/bhatiaarnav/}{\underline{linkedin.com/in/bhatiaarnav}} $|$
+  \href{https://github.com/ArnavBhatia68/}{\underline{github.com/ArnavBhatia68}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Arizona State University}{Tempe, AZ}
+    {Bachelor of Science in Computer Science $|$ \textbf{GPA: 4.0/4.0}}{Aug. 2022 -- May 2026}
+    \resumeItemListStart
+      \resumeItem{\textbf{Achievements:} New American University Scholarship, Moeur Award for Academic Excellence, TA of the Year, Dean's List}
+      \resumeItem{\textbf{Coursework:} Data Structures and Algorithms, Operating Systems, Software Engineering, Artificial Intelligence, Machine Learning, Natural Language Processing, Database Management, Applied Computational Methods, Cybersecurity}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Software Engineering Intern}{Tempe, AZ}
+    {APMAC Consulting}{Aug. 2025 -- May 2026}
+    \resumeItemListStart
+      \resumeItem{Built an AI-powered workforce analytics SaaS with \textbf{Next.js, FastAPI, and PostgreSQL} to quantify employee productivity in monetary terms, enabling sponsors to evaluate \textbf{50+} hiring and workforce scenarios using regression forecasts with \textbf{95\% confidence intervals}.}
+      \resumeItem{Engineered the \textbf{Next.js--FastAPI integration layer}, normalized relational schemas, and built \textbf{D3.js sponsor-facing dashboards} for predictions, insights, and reporting, ensuring reliable data flow across frontend, backend, and ML services.}
+      \resumeItem{Developed a HelpDesk ticketing system with \textbf{enterprise SSO authentication} and contributed to \textbf{AWS deployment}, cloud configuration, and multi-service orchestration, strengthening platform reliability and internal production readiness.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Software Engineer Intern}{Remote}
+    {Miran Informatics Pvt Ltd}{Jun. 2025 -- Aug. 2025}
+    \resumeItemListStart
+      \resumeItem{Designed the company's new website using \textbf{HTML, Bootstrap, CSS, and JavaScript}, improving the interface and user experience and increasing user traffic by \textbf{50\%} in the first month after launch.}
+      \resumeItem{Developed \textbf{REST API and SQL workflows}, including CRUD services, authentication, role-based access control, reporting/export pipelines, and resilient error handling; reduced production defects by \textbf{30\%} through regression testing.}
+      \resumeItem{Worked across the software delivery lifecycle for client-facing web applications, translating requirements into production-ready features and supporting debugging, release validation, and version control.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Undergraduate Teaching Assistant}{Tempe, AZ}
+    {Fulton Schools of Engineering, Arizona State University}{Aug. 2023 -- May 2026}
+    \resumeItemListStart
+      \resumeItem{Supported \textbf{2,000+ students} in CSE 110 and CSE 205 through lab sessions covering object-oriented programming, data structures, and software engineering, helping improve average lab grades by \textbf{42\%}.}
+      \resumeItem{Led \textbf{50+ Teaching Assistants} and developed \textbf{Python grading and course-support automation}, reducing manual effort by \textbf{70\%} and standardizing programming-assignment evaluations.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Undergraduate Researcher}{Tempe, AZ}
+    {Intelligent Robotics and Interactive Systems (IRIS) Lab, Arizona State University}{Jan. 2026 -- May 2026}
+    \resumeItemListStart
+      \resumeItem{Researched and developed \textbf{MuJoCo reinforcement-learning simulations} for aerial and articulated robotic systems to evaluate policy robustness, environment stability, and sim-to-real readiness under contact-rich dynamics.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{QueueForge} $|$ \emph{Next.js, TypeScript, FastAPI, Redis, PostgreSQL, Railway}}{}
+    \resumeItemListStart
+      \resumeItem{Architected and deployed QueueForge, a cloud-hosted job orchestration platform using Next.js, TypeScript, FastAPI, Redis,\\
+      PostgreSQL, and Railway, decoupling API handling from background execution through a distributed queue-worker architecture.}
+      \resumeItem{Engineered a Python worker with Redis queue consumption, SQLAlchemy persistence, and detailed execution logging,\\
+      validating \textbf{150+ jobs} with \textbf{97\% completion} across text-processing and CSV ingestion workloads.}
+      \resumeItem{Built a real-time operations dashboard with Tailwind CSS, shadcn/ui, Zustand, and React Query to expose live job throughput,\\
+      queue depth, lifecycle state transitions, and failure diagnostics for end-to-end observability and service reliability.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Lofty AI CRM} $|$ \emph{LangChain, VAPI, ElevenLabs, DeepSeek}}{}
+    \resumeItemListStart
+      \resumeItem{\textbf{Won the Lofty track at GlobeHack 2026} by building \textbf{five AI-powered CRM features}, including an AI voice caller\\
+      that qualifies leads and books appointments, a DeepSeek control panel, Google Maps route optimization, and SMS alerts.}
+      \resumeItem{Engineered an \textbf{SSE-streamed agentic onboarding flow} with LangChain that converts freeform workflow descriptions into a\\
+      nine-widget dashboard in real time, plus structured-data extraction that automatically books qualified appointments.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in,label={}]
+  \small{\item{
+    \textbf{Languages:} Java, Python, C++, JavaScript, SQL, HTML/CSS, Go \\
+    \textbf{Frameworks \& Libraries:} React, Next.js, FastAPI, Flask, Node.js, D3.js, SQLAlchemy, React Query, Tailwind CSS \\
+    \textbf{Databases \& Infrastructure:} PostgreSQL, MySQL, Redis, AWS, Docker, Kubernetes, Railway, Vercel \\
+    \textbf{Tools \& Concepts:} Git/GitHub, Linux, Jupyter, MuJoCo, REST APIs, distributed systems, message queues, software testing
+  }}
+\end{itemize}
+
+\end{document}
